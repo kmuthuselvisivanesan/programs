@@ -1,0 +1,55 @@
+//sorting array in ascending
+
+package learning;
+
+public class arraysortstring {
+
+	public static void main(String[] args) {
+		String st[] = { "m", "u", "t", "h", "u" };
+		for (String s : st)
+			System.out.println(s);
+
+	}
+
+}
+
+
+
+m
+u
+t
+h
+u
+
+package learning;
+
+import java.util.Arrays;
+
+public class arraysortstring {
+
+	public static void main(String[] args) {
+		String st[] = { "m", "u", "t", "h", "u" };
+		for (String s : st)
+			System.out.println(s);
+		System.out.println();
+		Arrays.sort(st);
+		for (String s : st)
+			System.out.println(s);
+
+	}
+
+}
+
+
+
+m
+u
+t
+h
+u
+
+h
+m
+t
+u
+u

@@ -1,0 +1,19 @@
+// just to print the name..string...basic java program
+
+
+package learning;
+
+public class basic {
+
+	public static void main(String[] args) {
+		String name = "Muthuselvi";
+		System.out.println("Name:"+name);
+
+	}
+
+}
+
+
+Output:
+
+Name:Muthuselvi

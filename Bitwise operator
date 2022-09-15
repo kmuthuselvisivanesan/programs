@@ -1,0 +1,27 @@
+// Bitwise operator
+
+package learning;
+
+public class Logicaloper {
+
+	public static void main(String[] args) {
+		int a=20,b=25;
+		System.out.println("And &&: "+(a>=10 && b<=25));
+		System.out.println("OR  ||: "+(a>=10 || b<=25));
+		System.out.println("EOR ^:  "+(a^b));
+		System.out.println("Shift R: "+(a>>2));
+		System.out.println("Shift L: "+(a<<2));
+	
+
+	}
+
+}
+
+
+Output:
+
+And &&: true
+OR  ||: true
+EOR ^:  13
+Shift R: 5
+Shift L: 80

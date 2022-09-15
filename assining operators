@@ -1,0 +1,33 @@
+// performing assigning operator
+
+package learning;
+
+public class Assingingoper {
+
+	public static void main(String[] args) {
+		int a=120;
+		System.out.println(a);
+		a+=10;//a=a+10, so 120+10=130;
+		System.out.println(a);
+		a-=10;//a=a-10; so 130-10=120;
+		System.out.println(a);
+        a*=10;//a=a*10; so 120*10=1200;
+        System.out.println(a);
+        a/=10;//a=a/10; 1200/10=120;
+        System.out.println(a);
+        a%=10;//a=a%10; so 120%10=0;
+        System.out.println(a);
+	}
+
+}
+
+
+
+output:
+
+120
+130
+120
+1200
+120
+0

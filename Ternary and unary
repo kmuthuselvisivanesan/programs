@@ -1,0 +1,29 @@
+// ternary and unary operators
+
+package learning;
+
+public class Ternaryoper {
+
+	public static void main(String[] args) {
+		int a=10,b=5,c=15;
+		System.out.println("Ternary: "+(((a>b)&&(a>c))?a:(b>c)?b:c));
+		a++;
+		System.out.println(a);
+		a--;
+		System.out.println(a);
+		System.out.println(--b);
+		System.out.println(--c);
+				
+
+	}
+
+}
+
+
+
+output:
+Ternary: 15
+11
+10
+4
+14

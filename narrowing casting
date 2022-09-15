@@ -1,0 +1,24 @@
+// to cast narrow..big to small, double to int...
+
+package learning;
+
+public class Casting2 {
+
+	public static void main(String[] args) {
+	double a=123.45567;
+	long c=(long)a;
+	int b=(int)a;//in narrowing casting,we should give the data type(ie required one) and then the assigned variables, instead of b=a;
+	System.out.println("Double:"+a);
+	System.out.println("Int:"+b);
+	System.out.println("Long:"+c);
+
+	}
+
+}
+
+
+output:
+
+Double:123.45567
+Int:123
+Long:123

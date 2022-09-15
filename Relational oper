@@ -1,0 +1,29 @@
+// perform relational operators
+
+package learning;
+
+public class Relationaloper {
+
+	public static void main(String[] args) {
+	int a=100,b=50;
+	System.out.println("Equal to: "+(a==b));
+	System.out.println("Not Equal to: "+(a!=b));
+	System.out.println("Less than equal to: "+(a<=b));
+	System.out.println("Greater than equal to: "+(a>=b));
+	System.out.println("Great than: "+(a>b));
+	System.out.println("Less than: "+(a<b));
+	
+
+	}
+
+}
+
+
+output:
+
+Equal to: false
+Not Equal to: true
+Less than equal to: false
+Greater thand equal to: true
+Great than: true
+Less than: false

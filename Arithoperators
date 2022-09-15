@@ -1,0 +1,26 @@
+/// performing arithmetic operations
+
+package learning;
+
+public class Arithadd {
+
+	public static void main(String[] args) {
+		int a=30,b=45;
+		System.out.println("Additon: "+(a+b));
+		System.out.println("Subtraction: "+(b-a));
+		System.out.println("Multiplication: "+(a*b));
+		System.out.println("Division: "+(b/a));
+		System.out.println("Modulus: "+(b%a));
+
+	}
+
+}
+
+
+output:
+
+Additon: 75
+Subtraction: 15
+Multiplication: 1350
+Division: 1
+Modulus: 15

@@ -1,0 +1,31 @@
+//to print int,float,char,boolean,string
+
+package learning;
+
+public class basic2 {
+
+	public static void main(String[] args) {
+	String name = "Muthuselvi";
+	int age=25;
+	float percent=100.00f; //f should be given in float or else it considers double
+	char yes = 't';//single character..give it in single quotes
+	boolean office = true;
+	System.out.println("Name:"+name);
+	System.out.println("Age:"+age);
+	System.out.println("Percent:"+percent);
+	System.out.println("Yes:"+yes);
+	System.out.println("Office:"+office);
+
+	}
+
+}
+
+
+
+output:
+
+Name:Muthuselvi
+Age:25
+Percent:100.0
+Yes:t
+Office:true

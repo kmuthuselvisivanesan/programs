@@ -1,0 +1,26 @@
+le// casting integer to double.....
+
+package learning;
+
+public class casting1 {
+
+	public static void main(String[] args) {
+		int a=25;//going to convert int to double
+		double b=a;
+		byte c=4;
+		short d=c;
+		System.out.println("Int:"+a);
+		System.out.println("Double:"+b);
+		System.out.println("Byte:"+c);
+		System.out.println("Short:"+d);
+
+	}
+
+}
+
+
+output:
+Int:25
+Double:25.0
+Byte:4
+Short:4

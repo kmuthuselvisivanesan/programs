@@ -1,0 +1,33 @@
+// program to print n numbers using while loop
+
+package learning;
+
+import java.util.Scanner;
+
+public class Whileloop {
+
+	public static void main(String[] args) {
+		int n, i=0;
+		System.out.println("enter the elements: ");
+		Scanner sc = new Scanner(System.in);
+		n=sc.nextInt();
+		while(i<=n)
+		{
+			System.out.println(i);
+			i++;
+		}
+
+	}
+
+}
+
+
+output:
+enter the elements: 
+5
+0
+1
+2
+3
+4
+5

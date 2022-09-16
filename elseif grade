@@ -1,0 +1,45 @@
+// program to find the grade
+
+package learning;
+
+import java.util.Scanner;
+
+public class Elseifladder {
+
+	public static void main(String[] args) {
+		float marks;
+		System.out.println("Enter the marks: ");
+		Scanner sc = new Scanner(System.in);
+		marks=sc.nextFloat();
+		if (marks>=90 && marks<=100)
+		{
+			System.out.println("Grade A");
+		}
+		else if (marks>=80 && marks<=89)
+		{
+			System.out.println("Grade B");
+		}
+		else if (marks>=70 && marks<=79)
+		{
+			System.out.println("Grade c");
+		}
+		else
+		{
+			System.out.println("Grade D");
+		}
+
+	}
+
+}
+
+
+output:
+
+Enter the marks: 
+100
+Grade A
+
+Enter the marks: 
+79
+Grade c
+

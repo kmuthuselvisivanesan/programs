@@ -1,0 +1,30 @@
+// program to scan using float
+
+package learning;
+
+import java.util.Scanner;
+
+public class Scannerfloat {
+
+	public static void main(String[] args) {
+
+	Scanner fl= new Scanner(System.in);
+	float a, b,c;
+	System.out.println("Enter the numbers:");
+	a=fl.nextFloat();
+	b=fl.nextFloat();
+	
+	c=((a*a)+(b*b));
+	System.out.println("Result: " +c);
+
+	}
+
+}
+
+
+output:
+
+Enter the numbers:
+4
+5
+Result: 41.0

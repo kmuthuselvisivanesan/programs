@@ -1,0 +1,51 @@
+// program to find vowels using group switch
+
+
+package learning;
+
+import java.util.Scanner;
+
+public class Switchchar {
+
+	public static void main(String[] args) {
+		char c;
+		System.out.println("Enter the character ");
+		Scanner sc=new Scanner(System.in);
+		c=sc.next().charAt(0);
+		switch(c)
+		{
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+			System.out.println(c+" is a vowel");
+					break;
+		default:
+			System.out.println("invalid");
+			break;
+		}
+
+	}
+
+}
+
+
+
+
+
+output:
+
+Enter the character 
+f
+invalid
+
+Enter the character 
+a
+a is a vowel
+

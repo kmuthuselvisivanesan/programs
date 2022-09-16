@@ -1,0 +1,34 @@
+// program to find leap year using if else
+
+package learning;
+
+import java.util.Scanner;
+
+public class If {
+
+	public static void main(String[] args) {
+int year;
+System.out.println("Enter the year: ");
+Scanner sc=new Scanner(System.in);
+year=sc.nextInt();
+if(year%4==0||(year%100==0 && year%400==0))
+{
+	System.out.println("The given year"+year+"is a leap year");
+}
+else
+{
+	System.out.println("The year is not a leap year");
+}
+}
+}
+
+
+output:
+Enter the year: 
+1999
+The year is not a leap year
+
+
+Enter the year: 
+2024
+The given year 2024 is a leap year

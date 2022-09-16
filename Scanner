@@ -1,0 +1,28 @@
+// program using scanner
+
+package learning;
+
+import java.util.Scanner;
+
+public class Scaannerinput {
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int a,b,c;
+	System.out.println("Enter the numbers:");
+	a=sc.nextInt();
+	b=sc.nextInt();
+	c=((a*a)+(b*b));
+	System.out.println("numbers:"+c);
+
+	}
+
+}
+
+
+output:
+
+Enter the numbers:
+4
+6
+numbers:52

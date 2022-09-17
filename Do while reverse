@@ -1,0 +1,39 @@
+// program using do while to print in descending order
+
+package learning;
+
+import java.util.Scanner;
+
+public class DOWHILE {
+
+	public static void main(String[] args) {
+		int n,i=10;
+		System.out.println("Enter the number: ");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		do
+		{
+			System.out.println(i);
+			i--;
+		}
+		while(i>=n);
+
+	}
+
+}
+
+
+output:
+
+Enter the number: 
+1
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1

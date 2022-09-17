@@ -1,0 +1,42 @@
+//Program to print numbers in fibonacci numbers
+
+package learning;
+
+import java.util.Scanner;
+
+public class Fibonnaci {
+
+	public static void main(String[] args) {
+	int i,n,a=-1,b=1,c;
+	System.out.println("Enter the number:");
+	Scanner sc = new Scanner(System.in);
+	n=sc.nextInt();
+	for(i=0;i<=n;i++)
+	{
+		c=a+b;
+		System.out.println(c);
+		a=b;
+		b=c;
+	}
+
+	}
+
+}
+
+
+output:
+
+Enter the number:
+11
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89

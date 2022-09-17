@@ -1,0 +1,44 @@
+// Program to find whether it is an armstrong number
+
+package learning;
+
+import java.util.Scanner;
+
+public class Armstrong {
+
+	public static void main(String[] args) {
+		int r,A=0,n,original;
+		System.out.println("Enter the given number:");
+		Scanner sc= new Scanner(System.in);
+		n=sc.nextInt();
+		original = n;
+		while(original>0)
+		{
+			r=original%10;
+			A=A+(r*r*r);
+			original=original/10;
+			
+		}
+		if (n==A)
+		{
+		System.out.println("It is an Armstrong number");
+		}
+		else
+		{
+			System.out.println("It is not a Armstrong number");
+		}
+
+	}
+
+}
+
+
+output:
+Enter the given number:
+23489
+It is not a Armstrong number
+
+
+Enter the given number:
+153
+It is an Armstrong number

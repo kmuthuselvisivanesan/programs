@@ -1,0 +1,30 @@
+// Program to print the triangle pattern
+
+package learning;
+
+public class nestedstar {
+
+	public static void main(String[] args) {
+		for(int i=1;i<=5;i++)
+		{
+			for(int j=1;j<=i;j++)//if we need square pattern, we can replace 5 instead of i
+				
+				{
+				System.out.print("*");
+				}
+			
+			   System.out.println("");
+		}
+
+	}
+
+}
+
+
+output:
+
+*  
+**  
+***  
+****  
+*****  

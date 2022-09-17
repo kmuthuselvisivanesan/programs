@@ -1,0 +1,29 @@
+// Program using break and continue st
+
+package learning;
+
+public class Breakcontinue {
+
+	public static void main(String[] args) {
+		for(int i=1;i<=10;i++)
+		{
+			if(i==4)
+				continue;
+		if (i==9)
+			break;
+		System.out.println(i);
+		}
+
+	}
+
+}
+
+output:
+1
+2
+3
+5
+6
+7
+8
+

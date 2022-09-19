@@ -1,0 +1,49 @@
+// Program to check whether the given number is a perfect number or not
+
+package learning;
+
+import java.util.Scanner;
+
+public class Peerfectnum {
+
+	public static void main(String[] args) {
+		int i,n,sum=0;
+		System.out.println("Enter the number");
+		Scanner sc = new Scanner(System.in);
+		n=sc.nextInt();
+		for(i=1;i<n;i++)//here i<=n is not given as we do not use the same divisible(factor) number to be used,6=1,2,3,6 are factors. we add 1+2+3=6. its a perfect num
+		{
+			if(n%i==0)// checking for factors
+			{
+				sum=sum+i;
+			}
+		}
+		if(n==sum)
+		{
+			System.out.println("The number is a perfect number");
+		}
+		else
+		{
+			System.out.println("The number is not a perfect number");
+		}
+
+	}
+
+}
+
+
+output:
+Enter the number
+6
+The number is a perfect number
+
+
+Enter the number
+28
+The number is a perfect number
+
+
+Enter the number
+90
+The number is not a perfect number
+

@@ -1,0 +1,42 @@
+// program to print multiplication table
+
+package learning;
+
+import java.util.Scanner;
+
+public class Multiplication {
+
+	public static void main(String[] args) {
+		int i,t,n;
+		System.out.println("Enter the table:");
+		Scanner sc =new Scanner(System.in);
+		t=sc.nextInt();
+		System.out.println("Enter the llimit:");
+		n=sc.nextInt();
+		for(i=0;i<=n;i++)
+		{
+			System.out.println(t + "*" + i +"=" +(t*i));
+		}
+
+	}
+
+}
+
+
+output:
+
+Enter the table:
+5
+Enter the llimit:
+10
+5*0=0
+5*1=5
+5*2=10
+5*3=15
+5*4=20
+5*5=25
+5*6=30
+5*7=35
+5*8=40
+5*9=45
+5*10=50

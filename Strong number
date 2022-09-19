@@ -1,0 +1,51 @@
+// Program to check whether the given number is strong number or not
+
+package learning;
+
+import java.util.Scanner;
+
+public class Strongnum {
+
+	public static void main(String[] args) {
+		int i,n,num,rem,sum=0;
+		System.out.println("Enter the number:");
+		Scanner sc = new Scanner(System.in);
+		n=sc.nextInt();
+		num=n;
+		while(num>0)
+		{
+			rem=num%10;
+			//System.out.println(rem);
+			int fact=1; //Initialize within the loop
+			for(i=1;i<=rem;i++)// to run as many times given
+			{
+			fact=fact*i;
+			}
+		
+		   sum=sum+fact;	
+			num=num/10;
+		}
+		
+	    if(n==sum)
+	        {
+		       System.out.println(n +" is a strong number");
+
+	        }
+	    else
+	      {
+		       System.out.println(n +" is not a strong number");
+	       }
+
+}
+}
+
+
+output:
+Enter the number:
+145
+145 is a strong number
+
+
+Enter the number:
+153
+153 is not a strong number

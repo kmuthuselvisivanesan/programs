@@ -1,0 +1,39 @@
+//Program to print the armstrong numbers from 100 to 999
+
+
+package learning;
+
+public class Armstrongnusfrom {
+
+	public static void main(String[] args) {
+	  
+		int temp,A,digit1,digit2,digit3,num;
+		for(num=100;num<=999;num++)
+		{
+			temp=num;    //to compare with the original num, we are using thie temp variable
+			digit3=temp%10; //we want the remainder and multiply thrice, no need to reverse it
+			temp=temp/10;
+			
+			digit2=temp%10;
+			temp=temp/10;
+			
+			digit1=temp%10;
+			
+			A=(digit3*digit3*digit3)+(digit2*digit2*digit2)+(digit1*digit1*digit1);
+			
+			if(num==A)
+			{
+				System.out.println("The Armstrong numbers are " +A);
+			}
+			
+		}
+	}
+}
+
+
+output:
+
+The Armstrong numbers are 153
+The Armstrong numbers are 370
+The Armstrong numbers are 371
+The Armstrong numbers are 407

@@ -1,0 +1,200 @@
+//Program to print the prime numbers from 1 to 999
+
+
+package learning;
+
+public class Primefrom1 {
+
+	public static void main(String[] args) {
+		int n,i,f=0;
+		for(n=1;n<=999;n++) //to find prime numbers bet 1 to 999, we are using for loop.
+		{
+			for(i=1;i<=n;i++)
+			{
+				if(n%i==0)
+				{
+					f++;
+				}
+			}
+			if (f==2) // factors will be 2 for prime numbers : 1 and itself
+			{
+				System.out.println("The prime numbers are "+n);
+			}
+			f=0;// after single iteration, value of f is set to zero, or it will count for n numbers
+		}
+
+	}
+
+}
+
+
+output:
+
+The prime numbers are 2
+The prime numbers are 3
+The prime numbers are 5
+The prime numbers are 7
+The prime numbers are 11
+The prime numbers are 13
+The prime numbers are 17
+The prime numbers are 19
+The prime numbers are 23
+The prime numbers are 29
+The prime numbers are 31
+The prime numbers are 37
+The prime numbers are 41
+The prime numbers are 43
+The prime numbers are 47
+The prime numbers are 53
+The prime numbers are 59
+The prime numbers are 61
+The prime numbers are 67
+The prime numbers are 71
+The prime numbers are 73
+The prime numbers are 79
+The prime numbers are 83
+The prime numbers are 89
+The prime numbers are 97
+The prime numbers are 101
+The prime numbers are 103
+The prime numbers are 107
+The prime numbers are 109
+The prime numbers are 113
+The prime numbers are 127
+The prime numbers are 131
+The prime numbers are 137
+The prime numbers are 139
+The prime numbers are 149
+The prime numbers are 151
+The prime numbers are 157
+The prime numbers are 163
+The prime numbers are 167
+The prime numbers are 173
+The prime numbers are 179
+The prime numbers are 181
+The prime numbers are 191
+The prime numbers are 193
+The prime numbers are 197
+The prime numbers are 199
+The prime numbers are 211
+The prime numbers are 223
+The prime numbers are 227
+The prime numbers are 229
+The prime numbers are 233
+The prime numbers are 239
+The prime numbers are 241
+The prime numbers are 251
+The prime numbers are 257
+The prime numbers are 263
+The prime numbers are 269
+The prime numbers are 271
+The prime numbers are 277
+The prime numbers are 281
+The prime numbers are 283
+The prime numbers are 293
+The prime numbers are 307
+The prime numbers are 311
+The prime numbers are 313
+The prime numbers are 317
+The prime numbers are 331
+The prime numbers are 337
+The prime numbers are 347
+The prime numbers are 349
+The prime numbers are 353
+The prime numbers are 359
+The prime numbers are 367
+The prime numbers are 373
+The prime numbers are 379
+The prime numbers are 383
+The prime numbers are 389
+The prime numbers are 397
+The prime numbers are 401
+The prime numbers are 409
+The prime numbers are 419
+The prime numbers are 421
+The prime numbers are 431
+The prime numbers are 433
+The prime numbers are 439
+The prime numbers are 443
+The prime numbers are 449
+The prime numbers are 457
+The prime numbers are 461
+The prime numbers are 463
+The prime numbers are 467
+The prime numbers are 479
+The prime numbers are 487
+The prime numbers are 491
+The prime numbers are 499
+The prime numbers are 503
+The prime numbers are 509
+The prime numbers are 521
+The prime numbers are 523
+The prime numbers are 541
+The prime numbers are 547
+The prime numbers are 557
+The prime numbers are 563
+The prime numbers are 569
+The prime numbers are 571
+The prime numbers are 577
+The prime numbers are 587
+The prime numbers are 593
+The prime numbers are 599
+The prime numbers are 601
+The prime numbers are 607
+The prime numbers are 613
+The prime numbers are 617
+The prime numbers are 619
+The prime numbers are 631
+The prime numbers are 641
+The prime numbers are 643
+The prime numbers are 647
+The prime numbers are 653
+The prime numbers are 659
+The prime numbers are 661
+The prime numbers are 673
+The prime numbers are 677
+The prime numbers are 683
+The prime numbers are 691
+The prime numbers are 701
+The prime numbers are 709
+The prime numbers are 719
+The prime numbers are 727
+The prime numbers are 733
+The prime numbers are 739
+The prime numbers are 743
+The prime numbers are 751
+The prime numbers are 757
+The prime numbers are 761
+The prime numbers are 769
+The prime numbers are 773
+The prime numbers are 787
+The prime numbers are 797
+The prime numbers are 809
+The prime numbers are 811
+The prime numbers are 821
+The prime numbers are 823
+The prime numbers are 827
+The prime numbers are 829
+The prime numbers are 839
+The prime numbers are 853
+The prime numbers are 857
+The prime numbers are 859
+The prime numbers are 863
+The prime numbers are 877
+The prime numbers are 881
+The prime numbers are 883
+The prime numbers are 887
+The prime numbers are 907
+The prime numbers are 911
+The prime numbers are 919
+The prime numbers are 929
+The prime numbers are 937
+The prime numbers are 941
+The prime numbers are 947
+The prime numbers are 953
+The prime numbers are 967
+The prime numbers are 971
+The prime numbers are 977
+The prime numbers are 983
+The prime numbers are 991
+The prime numbers are 997

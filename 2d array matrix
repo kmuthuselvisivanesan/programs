@@ -1,0 +1,33 @@
+// Program to print elements in matrix form
+
+
+package learning;
+
+public class Twodarray {
+
+	public static void main(String[] args) {
+		int a[][]= {
+				      {10,20,30},
+				      {40,50,60},
+				      {80,10,90},
+		};
+		
+		for(int i=0;i<3;i++)
+		{
+			for(int j=0;j<3;j++)
+			{
+				System.out.print(" "+a[i][j]); // to print in matrix form
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+output:
+
+10 20 30
+ 40 50 60
+ 80 10 90

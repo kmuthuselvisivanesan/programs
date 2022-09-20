@@ -1,0 +1,31 @@
+// Program to print matrix using enhanced for loop...jagged array
+
+package learning;
+
+public class Jaggedusingenhanced {
+	public static void main (String args[]) {
+		
+	int a[][]= {
+			
+			{10,24,34,67},
+			{23,56,78},
+			{1,4,6}
+    };  
+	
+	for(int k[]:a)
+	{
+		for( int m:k)
+		{
+			System.out.print(" "+m); // println is not given as we need to print in matrix
+		}
+		System.out.println();// to print next row
+	}
+}
+}
+
+
+output:
+
+10 24 34 67
+ 23 56 78
+ 1 4 6

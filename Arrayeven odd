@@ -1,0 +1,82 @@
+//Program to find the no.of even and odd elements in an array
+
+package learning;
+
+import java.util.Scanner;
+
+public class Arrayevenodd {
+
+	public static void main(String[] args) {
+		int i,n,even=0,odd=0;
+		System.out.println("Enter the number:");
+		Scanner sc = new Scanner(System.in);
+		n=sc.nextInt();
+		int a[]=new int[n];
+		for(i=0;i<n;i++)
+		{
+			System.out.println("Elements of a["+i+"]");
+			a[i]=sc.nextInt();
+		}
+		
+		for(int element :a)
+		{
+			if((element%2==0))
+			{
+				even++;
+			}
+			else
+			{
+				odd++;
+			}
+		}
+		System.out.println("Total no.of even element"+even);
+		System.out.println("Total no.of odd elements"+odd);
+
+	}
+
+}
+
+output:
+
+Enter the number:
+5
+Elements of a[0]
+1
+Elements of a[1]
+2
+Elements of a[2]
+6
+Elements of a[3]
+8
+Elements of a[4]
+7
+Total no.of even element3
+Total no.of odd elements2
+
+
+Enter the number:
+10
+Elements of a[0]
+23
+Elements of a[1]
+45
+Elements of a[2]
+65
+Elements of a[3]
+78
+Elements of a[4]
+98
+Elements of a[5]
+09
+Elements of a[6]
+45
+Elements of a[7]
+67
+Elements of a[8]
+12
+Elements of a[9]
+23
+Total no.of even element3
+Total no.of odd elements7
+
+

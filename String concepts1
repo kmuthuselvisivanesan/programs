@@ -1,0 +1,76 @@
+// string concepts
+
+package programs;
+
+public class String_concepts1 {
+
+	public static void main(String[] args) {
+		String a="Muthu selvi";
+		String b=" Sivanesan "; // given space to check for trim condition
+		String c="muthuselvi";
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(a.hashCode()); // to know the memory location
+		System.out.println(b.hashCode());
+		System.out.println(c.hashCode());
+		
+		System.out.println("Equals "+ a.equals(c));
+		System.out.println("Ignore "+ a.equalsIgnoreCase(c));  // to ignore case sensitive
+		
+		System.out.println(a.length()); //gives the length of the string
+		System.out.println(b.length());
+		
+		System.out.println("Character at" + a.charAt(6)); //gives the character present at the 6th place
+		
+		System.out.println("Uppercase" + a.toUpperCase());
+		System.out.println("Lowercase" + b.toLowerCase());
+		
+		System.out.println("Replace " +a.replace("selvi", "siva")); // to replace 
+		
+		System.out.println("Contains" +a.contains("siva"));
+		
+		System.out.println("Empty : " +a.isEmpty());
+		System.out.println("Endswith : " +a.endsWith("vi"));
+		System.out.println(("Startswith :"+ a.startsWith("Mu")));
+		
+		System.out.println("Substring : "+a.substring(4));  //it cuts and the remaining character
+		System.out.println("Substring : "+a.substring(0,5)); // it gives the first 5 characters
+		
+		char carray[]=a.toCharArray(); //changing char to array
+		for(char ch :carray)
+		{
+		//System.out.println(ch);
+		System.out.print(ch+" ");
+		}
+		
+		
+		System.out.println(b.trim());
+		
+
+	}
+
+}
+
+
+output:
+
+Muthu selvi
+ Sivanesan 
+992953190
+1324927352
+608660052
+Equals false
+Ignore false
+11
+11
+Character ats
+UppercaseMUTHU SELVI
+Lowercase sivanesan 
+Replace Muthu siva
+Containsfalse
+Empty : false
+Endswith : true
+Startswith :true
+Substring : u selvi
+Substring : Muthu
+M u t h u   s e l v i Sivanesan

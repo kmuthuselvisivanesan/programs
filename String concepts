@@ -1,0 +1,25 @@
+// To check the memory of string literals in static memory..immutable
+
+package programs;
+
+public class Stringconcepts {
+
+	public static void main(String[] args) {
+		String a ="Muthuselvi";
+		String b = "Muthuselvi";  // it has same memory, so it is immutable
+		System.out.println("String is "+a);
+		System.out.println("String is "+b);
+		System.out.println("Hashcode of a is"+a.hashCode());
+		System.out.println("Hashcode of b is"+b.hashCode());
+
+	}
+
+}
+
+
+output:
+
+String is Muthuselvi
+String is Muthuselvi
+Hashcode of a is-1692842380
+Hashcode of b is-1692842380

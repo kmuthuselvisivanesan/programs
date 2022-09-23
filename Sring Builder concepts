@@ -1,0 +1,54 @@
+// Program to check the functions of String Builder
+
+package programs;
+
+public class String_Builder_concepts {
+
+	public static void main(String[] args) {
+		StringBuffer builder = new StringBuffer("Muthuselvi");
+		System.out.println(builder);
+		builder.append(" "+"sivanesan"); // since it is mutable, string can be changed and stored in dynamic memory
+		builder.insert(20," smrj"); //offset,string
+		builder.replace(6, 11, "smrj");
+		System.out.println(builder);
+		System.out.println(builder);
+		builder.delete(6, 11);
+		System.out.println(builder);
+		builder.reverse();
+		System.out.println(builder);
+		System.out.println(builder.length());
+		System.out.println(builder.charAt(5));
+		System.out.println(builder.substring(0));
+		System.out.println(builder.substring(0,5));
+		builder.setCharAt(0,'@'); // to set a char
+		System.out.println(builder);
+		
+		StringBuffer sc=new StringBuffer(); //create new object
+		System.out.println(sc.capacity()); // check the capacity or the memory
+		
+		sc.append("Jai"); // if we insert another char, it will be same memory(dynamic memory, so buffer is used
+		System.out.println(sc.capacity());
+		sc.append("My name is Muthuselvisivanesan"); // giving long character than 16, so it will double the value(16*2=32)and adds 2(old capacity*2)+2
+		System.out.println(sc.capacity());
+		
+
+	}
+
+}
+
+
+Output:
+
+Muthuselvi
+Muthussmrjsivanesan smrj
+Muthussmrjsivanesan smrj
+Muthusivanesan smrj
+jrms nasenavisuhtuM
+19
+n
+jrms nasenavisuhtuM
+jrms 
+@rms nasenavisuhtuM
+16
+16
+34

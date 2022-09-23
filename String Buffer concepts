@@ -1,0 +1,54 @@
+// Program to check all the functions in buffer..string
+
+
+package programs;  //String builder and buffer are mutable but string literals are immutable
+
+public class String_Buffer_Builder {
+
+	public static void main(String[] args) {
+		StringBuffer buffer = new StringBuffer("Muthuselvi");
+		System.out.println(buffer);
+		buffer.append(" "+"sivanesan"); // since it is mutable, string can be changed and stored in dynamic memory
+		buffer.insert(20," smrj"); //offset,string
+		buffer.replace(6, 11, "smrj");
+		System.out.println(buffer);
+		System.out.println(buffer);
+		buffer.delete(6, 11);
+		System.out.println(buffer);
+		buffer.reverse();
+		System.out.println(buffer);
+		System.out.println(buffer.length());
+		System.out.println(buffer.charAt(5));
+		System.out.println(buffer.substring(0));
+		System.out.println(buffer.substring(0,5));
+		buffer.setCharAt(0,'@'); // to set a char
+		System.out.println(buffer);
+		
+		StringBuffer sc=new StringBuffer(); //create new object
+		System.out.println(sc.capacity()); // check the capacity or the memory
+		
+		sc.append("Jai"); // if we insert another char, it will be same memory(dynamic memory, so buffer is used
+		System.out.println(sc.capacity());
+		sc.append("My name is Muthuselvisivanesan"); // giving long character than 16, so it will double the value(16*2=32)and adds 2(old capacity*2)+2
+		System.out.println(sc.capacity());
+		
+
+	}
+
+}
+
+Output:
+Muthuselvi
+Muthussmrjsivanesan smrj
+Muthussmrjsivanesan smrj
+Muthusivanesan smrj
+jrms nasenavisuhtuM
+19
+n
+jrms nasenavisuhtuM
+jrms 
+@rms nasenavisuhtuM
+16
+16
+34
+

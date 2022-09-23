@@ -1,0 +1,35 @@
+// Program to change the string to upper case
+
+
+package programs;
+
+public class String_Uppercase {
+
+	public static void main(String[] args) {
+		StringBuilder a = new StringBuilder("abcde");
+		System.out.println(a);
+		for(int i=0;i<a.length();i++)
+		{
+			if(a.charAt(i)>=97 && a.charAt(i)<=122 )// condition checking...should be small alphabets
+			    {
+				
+				   int c = (int)a.charAt(i)-32; // changing string of a to int..to calculate the ascii of upper case(97-32=65)
+			       a.setCharAt(i,(char)c); // converting integer to char c and comparing the integer to ascii
+			    }
+	     }
+			
+			System.out.println(a);	
+			
+		}
+
+	}
+
+
+output:
+
+abcde
+ABCDE
+
+
+
+
